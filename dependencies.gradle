@@ -1,0 +1,31 @@
+ext {
+
+    //core dependencies
+    def appCompatVersion = "1.7.0"
+    def coreKtx = "1.7.0"
+
+    coreDependencies = [
+        appCompat: "androidx.core:core-ktx:" + appCompatVersion,
+        coreKtx: "androidx.core:core-ktx:" + coreKtx
+    ]
+
+    //network dependencies
+    def retrofitVersion = "2.9.0"
+    def okhttp3Version = "4.9.0"
+
+    networkDependencies = [
+            retrofit: "com.squareup.retrofit2:retrofit:" + retrofitVersion,
+            converterGson: "com.squareup.retrofit2:converter-gson:" + retrofitVersion,
+            okhttp: "com.squareup.okhttp3:okhttp:" + okhttp3Version,
+            loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:" + okhttp3Version
+    ]
+
+    //di dependencies
+    def koinAndroidVersion = "3.0.1"
+
+    diDependencies = [
+            koinAndroid: "io.insert-koin:koin-android:" + koinAndroidVersion,
+            navigation: "io.insert-koin:koin-androidx-navigation:" + "3.2.0-beta-1",
+            compose: "io.insert-koin:koin-androidx-compose:" + koinAndroidVersion
+    ]
+}
