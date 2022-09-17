@@ -32,7 +32,7 @@ val networkModule = module {
 
     single {
         Retrofit.Builder()
-            .baseUrl("https://tasty.p.rapidapi.com/")
+            .baseUrl("https://tasty.p.rapidapi.com")
             .addConverterFactory(GsonConverterFactory.create())
             .client(get<OkHttpClient>())
             .build()
