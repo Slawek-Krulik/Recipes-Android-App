@@ -6,6 +6,6 @@ import retrofit2.http.Headers
 
 interface RecipesApi {
     @Headers("X-RapidAPI-Key: 44add27e2fmshf9271e745065a9dp160386jsnfe8f99291abb")
-    @GET("recipes/list")
+    @GET("/recipes/list")
     suspend fun getAll(): RecipeResponse
 }
