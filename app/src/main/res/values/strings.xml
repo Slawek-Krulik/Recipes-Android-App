@@ -3,10 +3,11 @@
     <string name="error_internal">The server is under maintenance. Please try again in a few minutes.</string>
     <string name="error_bad_request">Validation error. Please check input parameters.</string>
     <string name="error_unknown">Ups… Something went wrong.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_main2">MainActivity2</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="nav_remote_recipe">Remote</string>
+    <string name="nav_local_recipe">Local</string>
+    <string name="nav_favourite_recipe">Favourite</string>
+    <string name="title_remote_recipe">Remote Recipes</string>
+    <string name="title_local_recipe">Local Recipes</string>
+    <string name="title_favourite_recipe">Favourite Recipes</string>
 </resources>

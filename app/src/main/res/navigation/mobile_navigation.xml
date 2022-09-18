@@ -8,18 +8,18 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.recipes_android_app.RecipeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_remote_recipe"
         tools:layout="@layout/fragment_remote_recipe" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.recipes_android_app.ui.LocalRecipeFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_local_recipe"
         tools:layout="@layout/fragment_local_recipe" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.recipes_android_app.ui.FavouriteRecipeFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_favourite_recipe"
         tools:layout="@layout/fragment_favourite_recipe" />
 </navigation>
