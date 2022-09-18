@@ -6,12 +6,13 @@ import com.google.gson.annotations.SerializedName
 data class RecipeRemote(
     @SerializedName("id") val id: Int,
     @SerializedName("name") val name: String?,
+    @SerializedName("thumbnail_url") val thumbnail: String,
     @SerializedName("sections") val sections: List<SectionsRemote>?,
     @SerializedName("instructions") val instructions: List<RecipeInstructionRemote>
 ) {
     fun toRecipe(): Recipe {
        // val ingredients = sections?.flatMap{ it -> it.components.map { it.ingredient }}
 
-        return Recipe(id,name)
+        return Recipe(id,name,thumbnail)
     }
 }

@@ -2,6 +2,9 @@ package com.example.recipes_android_app.core.di
 
 import android.content.Context
 import android.net.ConnectivityManager
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.recipes_android_app.core.exception.ErrorMapper
 import com.example.recipes_android_app.core.exception.ErrorMapperImpl
 import com.example.recipes_android_app.core.exception.ErrorWrapper
@@ -20,4 +23,12 @@ val appModule = module {
     factory<ErrorMapper> { ErrorMapperImpl(androidContext()) }
 
     factory { androidContext().getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager }
+
+    factory {
+        GridLayoutManager(androidContext(),2)
+    }
+
+    factory {
+        RecyclerView(androidContext())
+    }
 }

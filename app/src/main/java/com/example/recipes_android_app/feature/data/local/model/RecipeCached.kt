@@ -8,19 +8,22 @@ import com.example.recipes_android_app.feature.domain.model.Recipe
 class RecipeCached(
     @PrimaryKey
     val id: Int,
-    val name: String?
+    val name: String?,
+    val thumbnail: String
 ) {
 
 
     constructor(recipe: Recipe) : this(
         id = recipe.id,
-        name = recipe.name
+        name = recipe.name,
+        thumbnail = recipe.thumbnail
     )
 
 
     fun toRecipe() = Recipe(
         id = id,
-        name = name
+        name = name,
+        thumbnail = thumbnail
     )
 
 }
