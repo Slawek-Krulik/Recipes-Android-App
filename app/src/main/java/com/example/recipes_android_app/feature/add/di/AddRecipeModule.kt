@@ -11,14 +11,14 @@ import com.example.recipes_android_app.feature.remote.presentation.RecipeViewMod
 import org.koin.dsl.module
 import org.koin.androidx.viewmodel.dsl.viewModel
 
-val recipeModule = module {
+val addRecipeModule = module {
 
     //data
     factory<AddRecipeRepository> { AddRecipeRepositoryImpl(get()) }
 
     //domain
-    factory<AddRecipeUseCase>{ AddRecipeUseCase(get()) }
+    factory{ AddRecipeUseCase(get()) }
 
     //presentation
-    viewModel{ AddRecipeViewModel(get()) }
+    viewModel{ AddRecipeViewModel(get(), get()) }
 }

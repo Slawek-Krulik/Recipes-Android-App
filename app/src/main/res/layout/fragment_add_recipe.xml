@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.AddRecipeFragment">
+    tools:context=".feature.add.presentation.AddRecipeFragment">
 
     <LinearLayout
         android:id="@+id/add_recipe_linear_layout"
@@ -31,6 +31,7 @@
 
 
     <Button
+        android:id="@+id/add_recipe_button"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="bottom"
