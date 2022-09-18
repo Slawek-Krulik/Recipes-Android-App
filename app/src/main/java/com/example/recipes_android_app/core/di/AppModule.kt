@@ -11,6 +11,7 @@ import com.example.recipes_android_app.core.exception.ErrorWrapper
 import com.example.recipes_android_app.core.exception.ErrorWrapperImpl
 import com.example.recipes_android_app.core.network.NetworkStateAvailableImpl
 import com.example.recipes_android_app.core.network.NetworkStateProvider
+import org.koin.android.ext.koin.androidApplication
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
@@ -25,7 +26,7 @@ val appModule = module {
     factory { androidContext().getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager }
 
     factory {
-        GridLayoutManager(androidContext(),2)
+        GridLayoutManager(androidApplication(),2)
     }
 
     factory {
