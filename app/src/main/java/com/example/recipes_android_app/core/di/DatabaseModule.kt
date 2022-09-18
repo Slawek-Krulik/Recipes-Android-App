@@ -13,7 +13,9 @@ val databaseModule = module {
             androidApplication(),
             AppDatabase::class.java,
             "app-database"
-        ).build()
+        )
+            .fallbackToDestructiveMigration()
+            .build()
     }
 
     single<RecipeDao> {
