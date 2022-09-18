@@ -1,11 +1,11 @@
-package com.example.recipes_android_app.feature.presentation
+package com.example.recipes_android_app.feature.remote.presentation
 
 import androidx.lifecycle.*
 import com.example.recipes_android_app.core.base.BaseViewModel
 import com.example.recipes_android_app.core.exception.ErrorMapper
-import com.example.recipes_android_app.feature.domain.GetRecipeUseCase
-import com.example.recipes_android_app.feature.domain.model.Recipe
-import com.example.recipes_android_app.feature.presentation.model.RecipeDisplayable
+import com.example.recipes_android_app.feature.remote.domain.GetRecipeUseCase
+import com.example.recipes_android_app.feature.remote.domain.model.Recipe
+import com.example.recipes_android_app.feature.remote.presentation.model.RecipeDisplayable
 
 class RecipeViewModel(
     private val recipeUseCase: GetRecipeUseCase,

@@ -1,4 +1,4 @@
-package com.example.recipes_android_app.feature.presentation
+package com.example.recipes_android_app.feature.remote.presentation
 
 import android.view.LayoutInflater
 import android.view.View
@@ -10,9 +10,11 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.recipes_android_app.R
-import com.example.recipes_android_app.feature.presentation.model.RecipeDisplayable
+import com.example.recipes_android_app.feature.remote.presentation.model.RecipeDisplayable
 
-class RecipeAdapter : ListAdapter<RecipeDisplayable, RecipeAdapter.RecipeViewHolder>(RecipeDiffCallback) {
+class RecipeAdapter : ListAdapter<RecipeDisplayable, RecipeAdapter.RecipeViewHolder>(
+    RecipeDiffCallback
+) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
         val view = LayoutInflater.from(parent.context)

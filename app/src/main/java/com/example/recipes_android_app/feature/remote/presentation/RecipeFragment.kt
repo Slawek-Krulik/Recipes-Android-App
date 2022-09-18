@@ -1,12 +1,10 @@
-package com.example.recipes_android_app
+package com.example.recipes_android_app.feature.remote.presentation
 
 import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.recipes_android_app.R
 import com.example.recipes_android_app.core.base.BaseFragment
-import com.example.recipes_android_app.feature.presentation.RecipeAdapter
-import com.example.recipes_android_app.feature.presentation.RecipeViewModel
-import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class RecipeFragment : BaseFragment<RecipeViewModel>(R.layout.fragment_remote_recipe) {

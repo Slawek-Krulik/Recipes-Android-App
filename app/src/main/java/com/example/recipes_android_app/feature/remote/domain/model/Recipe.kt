@@ -1,4 +1,4 @@
-package com.example.recipes_android_app.feature.domain.model
+package com.example.recipes_android_app.feature.remote.domain.model
 
 data class Recipe(
     val id: Int,

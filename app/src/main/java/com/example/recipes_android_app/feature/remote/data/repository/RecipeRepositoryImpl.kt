@@ -1,13 +1,13 @@
-package com.example.recipes_android_app.feature.data.repository
+package com.example.recipes_android_app.feature.remote.data.repository
 
 import com.example.recipes_android_app.core.api.RecipesApi
 import com.example.recipes_android_app.core.exception.ErrorWrapper
 import com.example.recipes_android_app.core.exception.callOrThrow
 import com.example.recipes_android_app.core.network.NetworkStateProvider
-import com.example.recipes_android_app.feature.data.local.RecipeDao
-import com.example.recipes_android_app.feature.data.local.model.RecipeCached
-import com.example.recipes_android_app.feature.domain.RecipeRepository
-import com.example.recipes_android_app.feature.domain.model.Recipe
+import com.example.recipes_android_app.feature.remote.data.local.RecipeDao
+import com.example.recipes_android_app.feature.remote.data.local.model.RecipeCached
+import com.example.recipes_android_app.feature.remote.domain.RecipeRepository
+import com.example.recipes_android_app.feature.remote.domain.model.Recipe
 
 class RecipeRepositoryImpl(
     private val api: RecipesApi,
@@ -38,6 +38,6 @@ class RecipeRepositoryImpl(
     private suspend fun saveRecipeToLocal(episodes: List<Recipe>) {
         episodes.map { RecipeCached(it) }
             .toTypedArray()
-            .let { recipeDao.saveEpisodes(*it) }
+            .let { recipeDao.saveRecipes(*it) }
     }
 }

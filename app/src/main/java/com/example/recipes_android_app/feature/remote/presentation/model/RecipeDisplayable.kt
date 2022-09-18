@@ -1,6 +1,6 @@
-package com.example.recipes_android_app.feature.presentation.model
+package com.example.recipes_android_app.feature.remote.presentation.model
 
-import com.example.recipes_android_app.feature.domain.model.Recipe
+import com.example.recipes_android_app.feature.remote.domain.model.Recipe
 
 data class RecipeDisplayable(
     val name: String?,

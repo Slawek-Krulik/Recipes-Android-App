@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.recipes_android_app.RecipeFragment"
+        android:name="com.example.recipes_android_app.feature.remote.presentation.RecipeFragment"
         android:label="@string/title_remote_recipe"
         tools:layout="@layout/fragment_remote_recipe" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.recipes_android_app.ui.LocalRecipeFragment"
+        android:name="com.example.recipes_android_app.feature.local.LocalRecipeFragment"
         android:label="@string/title_local_recipe"
         tools:layout="@layout/fragment_local_recipe" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.recipes_android_app.ui.FavouriteRecipeFragment"
+        android:name="com.example.recipes_android_app.feature.favourite.FavouriteRecipeFragment"
         android:label="@string/title_favourite_recipe"
         tools:layout="@layout/fragment_favourite_recipe" />
 </navigation>

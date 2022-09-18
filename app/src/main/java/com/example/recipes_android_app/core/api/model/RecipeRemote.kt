@@ -1,6 +1,6 @@
 package com.example.recipes_android_app.core.api.model
 
-import com.example.recipes_android_app.feature.domain.model.Recipe
+import com.example.recipes_android_app.feature.remote.domain.model.Recipe
 import com.google.gson.annotations.SerializedName
 
 data class RecipeRemote(

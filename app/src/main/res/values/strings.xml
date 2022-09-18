@@ -10,4 +10,10 @@
     <string name="title_remote_recipe">Remote Recipes</string>
     <string name="title_local_recipe">Local Recipes</string>
     <string name="title_favourite_recipe">Favourite Recipes</string>
+    <string name="fab_add_recipe">add recipe</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_recipe_frag_add_hint">Title</string>
+    <string name="add_recipe_frag_note_hint">Note</string>
+    <string name="add_recipe_frag_button">Dodaj</string>
 </resources>
